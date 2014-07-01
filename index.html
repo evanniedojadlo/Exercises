@@ -35,9 +35,23 @@ greet('Bob');
 
 
 var yell = function (text) {
-	var text = str.toUpperCase();
+	return str.toUpperCase();
 };
 yell('text')
+
+
+var divideBy = function (numOne, numTwo) {
+	return numOne / numTwo 
+}
+
+var result = divideBy(50, 2);
+console.log('Result should be 25:', result);
+
+result = divideBy(40, 10);
+console.log('Result should be 4:', result);
+
+result = divideBy(99, 3);
+console.log('Result should be 33:', result);
 
 
 </script>
