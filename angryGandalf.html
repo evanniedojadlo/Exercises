@@ -47,6 +47,15 @@ console.assert(angryGandalf('grey') === "YOU SHALL NOT PASS!");
 console.assert(angryGandalf('white') === "You merely passed me to your demise.");
 console.assert(angryGandalf(2) === "I don't think I'm Gandalf anymore.");
 
+
+    $("#submitInput").on('click', function() {
+      var name = $("#name").val();
+      var message = angryGandalf(name);
+      $("#gandalfMessage").html(message);
+    });
+
+
+
 </script>
 
 

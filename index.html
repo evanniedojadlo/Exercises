@@ -62,6 +62,14 @@ result = divideBy(99, 3);
 console.log('Result should be 33:', result);
 
 
+    $("#submitInput").on('click', function() {
+      var name = $("#name").val();
+      var message = angryGandalf(name);
+      $("#gandalfMessage").html(message);
+    });
+
+
+
 </script>
 
 </div> 
