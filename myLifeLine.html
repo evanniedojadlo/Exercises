@@ -5,6 +5,18 @@
 </head>
 <body>
 
+
+	<form>
+		<input type="text" id="jobTitle" placeholder="Job Title" />
+		<input type"text" id="hometown" placeholder="Hometown"/> 
+		<input type="text" id="partner" placeholder="Partner" />
+		<input type="text" id="children" placeholder="Children"/>
+		<button type="submit" id="submit">Submit</button>
+	</form>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+
 <script>
 
 
@@ -20,10 +32,22 @@
 	var tellForntune = function(children, partner, hometown, jobTitle);
 
 
-	var message;
+var firstLetter = jobTitle.charAt(0);
+if(firstLetter === 'a' || 
+	firstLetter === 'e' ||
+	firstLetter === 'i' ||
+	firstLetter === 'o' ||
+	firstLetter === 'u' || {
 
-  // Define string variable that will have that output
-  
+		var a = "an ";
+	}else {
+		var a = 'a ';
+	}
+
+console.log(firstLetter);
+
+
+	var message = "You are a " + jobTitle + " from " + hometown + " and married to " + partner + " with " + children + " kids.";  
 
 
 
@@ -31,9 +55,22 @@
   // Return that string
   return message;
 
-console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq  with 3 kids.' ); 
-console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling  with 3000 kids.');
-console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal  with 0 kids.') ; 
+};
+
+
+
+	 $("#submitInput").on('click', function(e) {
+	 		e.preventDefault();
+	 		var jobTitle = $("#jobTitle").val();
+	 		var hometown = $("#hometown").val();
+	 		var partner = $("#partner").val();
+	 		var children = $("#children").val();
+
+	 		var message = lifeLine(jobTitle, hometown, partner, children);
+
+
+
+}};
 
 
 </script>
