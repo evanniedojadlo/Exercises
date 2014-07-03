@@ -10,18 +10,22 @@
 	margin: 0 auto;
 }
 
-.header {}
+.header {
+	/*The header will not be floated, nothing to do here per example one*/
+}
 
 .sidebar {
 	float: left;
 	width: 250px;
+	height: 300px;
 }
 
 .main-content {
 	float: left;
-	/* hint! */
+	width: 734px;
+	height: 300px;
 }
 
 .footer {
-	/* hint! */
+	clear: both;
 }
