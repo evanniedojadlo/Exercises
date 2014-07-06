@@ -11,7 +11,9 @@
 }
 
 
-.main-content {}
+.main-content {
+	height: 680px;
+}
 /* hint! what do you need to add here? */
 
 .widget {
