@@ -5,7 +5,10 @@
 </head>
 <body>
 
-
+<form id="choice">
+<input id="answer" placeholder="What do you choose?" />
+<button type="submit">Submit</button>
+</form>
 
 
 
@@ -39,6 +42,13 @@ if (choice2==="rock"){
         return("scissors win");
 }
 }};
+
+console.log(window);
+$("#choice").on('submit', function(e){
+e.preventDefault();
+
+var answer = $("#answer").val()
+
 
 
 
