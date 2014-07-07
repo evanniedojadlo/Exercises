@@ -5,10 +5,18 @@
 </head>
 <body>
 
+<div ="container">
+
 <form id="choice">
 <input id="answer" placeholder="What do you choose?" />
 <button type="submit">Submit</button>
 </form>
+
+<div id="output">
+</div>
+
+
+</div>
 
 
 
@@ -16,7 +24,16 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
 
-var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+
+
+console.log(window);
+$("#choice").on('submit', function(e){
+e.preventDefault();
+
+var answer = $("#answer").val()
+
+
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
 	computerChoice = "rock";
@@ -43,11 +60,6 @@ if (choice2==="rock"){
 }
 }};
 
-console.log(window);
-$("#choice").on('submit', function(e){
-e.preventDefault();
-
-var answer = $("#answer").val()
 
 
 
