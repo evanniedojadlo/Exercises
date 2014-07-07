@@ -6,23 +6,48 @@
 /* Example 07 */
 
 .container {
-	width: 1024px; /* change me to a percentage width, like 80% */
+	width: 70%; /* change me to a percentage width, like 80% */
 	margin: 0 auto;
 }
 
 
-.header {}
+.header {
+	height: 100px;
+}
 
-.logo {}
+.logo {
+	float: left;
+}
 
-.navigation {}
+.navigation {
+	float: right;
+}
 
-.sidebar {}
+.sidebar {
+	float: left;
+	width: 30%;
+	height: 80%;
+}
 
-.main-content {}
+.main-content {
+	height: 500px;
+}
 
-.sub-content {}
+.sub-content {
+	float: right;
+	width: 50%;
+	height: 40%;
 
-.sub-content-2 {}
+	margin-bottom: 20px;
+}
 
-.footer {}
+.sub-content-2 {
+	float: right;
+	clear: right;
+	width: 50%;
+	height: 40%;
+}
+
+.footer {
+	clear: both;
+}
