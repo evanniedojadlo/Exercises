@@ -1,3 +1,4 @@
+//Initial test to ensure that the external JS file is loaded
 console.log('rps.js loaded');
  
 // What the computer's choice is
