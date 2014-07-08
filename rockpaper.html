@@ -1,60 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rock, Paper, Scissors</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Rock Paper Scissors</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<div ="container">
-
-<form id="choice">
-<input id="answer" placeholder="What do you choose?" />
-<button type="submit">Submit</button>
-</form>
-
-<div id="output">
-</div>
-
-
-</div>
-
-
+<button class='rps-action' id="rock">Rock</button>
+<button class='rps-action' id="paper">Paper</button>
+<button class='rps-action' id="scissors">Scissor</button>
+ 
+<h1 id="message"></h1>
+<h3 >User Choice: <span id="userChoice"></span></h3>
+<h3 >Computer Choice: <span id="compChoice"></span></h3>
+ 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-
-
-var userChoice = prompt("Do you choose rock, paper or scissors?");
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {
-	computerChoice = "rock";
-} else if(computerChoice <= 0.67) {
-	computerChoice = "paper";
-} else {
-	computerChoice = "scissors";
-}
-var compare = function(userChoice, computerChoice) {
-if(choice1 === choice2)  $(output)."The result is a tie!";
-if(choice1 === "rock") {
-if(choice2 === "scissors") return "rock wins";
-else return "paper wins";
-}
-if(choice1 === "paper") {
-if(choice2 === "rock") return "paper wins";
-else return "scissors win";
-}
-if (choice1==="scissors"){
-if (choice2==="rock"){
-    return ("rock wins");
-    }else{
-        return("scissors win");
-}
-}};
-
-
-
-
-
-</script>
-
+ 
+<script src="js/rps.js"></script>
+ 
 </body>
 </html>
