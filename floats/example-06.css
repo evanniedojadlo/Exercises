@@ -30,7 +30,10 @@
 
 
 /* Bonus: what happens if you make a couple of the widgets taller than the other? */
-/*.widget.tall {}*/
+.widget.tall {
+	height: 400px;
+	height: 1000px;
+}
 
 /* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
 .widget.fix {

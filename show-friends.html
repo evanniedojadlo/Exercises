@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+var friends = ["Evan", "Lisa", "Becca", "Sam", "Jude"];
+
+var list = "<ul>";
+
+// Create your for loop here
+// HINT: the string should look like '<li>' + friends[x] + "</li>" + ....
+
+for(var i=0; i < friends.length; i++) {
+		 list = list + '<li>' + friends[i] + '</li>';
+}
+
+// Use jQuery to select the body tag on the index and append the finish table string
+$("body").append(list);
+
+</script>
+
+</body>
+</html>

@@ -101,11 +101,12 @@ div {
 }
 
 .widget {
-	background: #BB326B;
-	margin: 10px;
 	width: 200px;
 	height: 200px;
+	margin: 10px;
+	padding-top: 75px;
+	background: #BB326B;
+	width: 400px;
 	font-size: 36px;
 	text-align: center;
-	padding-top: 75px;
 }
