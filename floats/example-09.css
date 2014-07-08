@@ -11,27 +11,31 @@
 	margin-bottom: 2%;
 }
 
+.container {
+	margin: 0 10%;
+}
+
 .sidebar {
 	float: left;
-	width: 18%;
+	width: 34%;
 	height: 300px;
 }
 
 .main-content {
 	float: left;
-	width: 18%;
+	width: 34%;
 	height: 300px;
 }
 
 .sub-content {
 	float: left;
-	width: 19%;
+	width: 32%;
 	height: 300px;
 }
 
 .footer {
 	clear: both;
-	width: 55%;
+	width: 100%;
 }
 
 /* what do you have to add to make the sidebar and content and footer not be the full width of the browser? */
