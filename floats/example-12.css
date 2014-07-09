@@ -5,6 +5,11 @@
 
 /* Example 12 */
 
+.container {
+	width: 30%;
+	margin-left: 35%;
+}
+
 /* To Do List */
 .todolist {}
 
@@ -13,7 +18,9 @@
 
 
 /* Priority icon dot */
-.icon {}
+.icon {
+	float: right;
+}
 
 /* Info of the todo, title and date */
 .todo-info {}
