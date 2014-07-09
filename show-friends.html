@@ -7,18 +7,27 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+
 <script>
-
-var friends = ["Evan", "Lisa", "Becca", "Sam", "Jude"];
-
-var list = "<ul>";
-
 // Create your for loop here
 // HINT: the string should look like '<li>' + friends[x] + "</li>" + ....
+//Put the HTML creating for-loop in a createList function
+//Keep the var friends outside the function
+//Put a 'addFriend' function to push the value from the input into array.
 
+
+
+var friends = ["Evan", "Lisa", "Becca", "Sam", "Jude"];
+var list = "<ul>";
+
+
+
+var createList = function (){
 for(var i=0; i < friends.length; i++) {
 		 list = list + '<li>' + friends[i] + '</li>';
-}
+}}
+
+var addFriend = function() {}
 
 // Use jQuery to select the body tag on the index and append the finish table string
 $("body").append(list);
