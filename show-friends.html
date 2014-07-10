@@ -23,26 +23,36 @@
 //Create an event handle to listen to the submit button click. On that click, get the value and use the addFriend function to add a friend, followed by using the createList function to repopulate the friend on the list.
 
 
-
+//Students at my table
 var friends = ["Evan", "Lisa", "Becca", "Sam", "Jude"];
-var list = "<ul>";
-
-
-var addFriend = function() {
-		$('#formname').on('submit');
-		friends.push('#newfriends');
-}
-
-//$(document).ready(function()
-//{
-//    $("#submit").click(function()
-//    {}
+//var list = "<ul>";
 
 
 var createList = function (){
-for(var i=0; i < friends.length; i++) {
-		 list = list + '<li>' + friends[i] + '</li>';
-}}
+var list = "<ul id='list'>"
+
+for (i=0; i < friends.length; i++) {
+	var x = '<li>' + friends[i] + '<button class="unfriend" data-id=["' + i + ']
+}
+
+
+
+//Previous for loop
+//for(var i=0; i < friends.length; i++) {
+//		 list = list + '<li>' + friends[i] + '</li>';
+//}};
+
+
+
+
+var addFriend = function() {
+		friends.push('#newfriends');
+}
+
+
+
+
+
 
 // addFriend Steps
 //jquery listen inside of the function?
