@@ -5,14 +5,12 @@
 
 /* Example 12 */
 
-.container {
-	width: 30%;
-	margin-left: 35%;
-	background-color: #FFFFFF;
-}
-
 /* To Do List */
-.todolist {}
+.todolist {
+	background-color: #FFFFFF;
+	width: 55%;
+	margin: 0 auto;
+}
 
 /* Individual Todo */
 .todo {}
