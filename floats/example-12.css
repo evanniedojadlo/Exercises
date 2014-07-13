@@ -8,6 +8,7 @@
 .container {
 	width: 30%;
 	margin-left: 35%;
+	background-color: #FFFFFF;
 }
 
 /* To Do List */
@@ -19,7 +20,7 @@
 
 /* Priority icon dot */
 .icon {
-	float: right;
+	float: left;
 }
 
 /* Info of the todo, title and date */
@@ -32,4 +33,6 @@
 .todo-date {}
 
 /* Checkboxes! */
-input[type=checkbox] {}
+input[type=checkbox] {
+	float: right;
+}
