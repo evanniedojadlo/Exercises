@@ -10,19 +10,26 @@
 	background-color: #FFFFFF;
 	width: 55%;
 	margin: 0 auto;
+	padding: 2em;
 }
 
 /* Individual Todo */
-.todo {}
+.todo {
+	overflow: hidden;
+}
 
 
 /* Priority icon dot */
 .icon {
 	float: left;
+	margin: 0 10px;
 }
 
 /* Info of the todo, title and date */
-.todo-info {}
+.todo-info {
+	float: left;
+	margin: 0.5em;
+}
 
 /* Title */
 .todo-title {}
@@ -33,4 +40,5 @@
 /* Checkboxes! */
 input[type=checkbox] {
 	float: right;
+	margin: 2.5em 2.5em 0 0;
 }
