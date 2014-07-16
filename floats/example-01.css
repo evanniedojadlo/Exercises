@@ -26,15 +26,10 @@
     height: 300px; /* again, for example purposes only */
 }
 
-.footer {
-    /*clear: both; /* to clear the floated elements above it. try removing me and see what happens. it might be more obvious if you add some margin to all the elements. */
 
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.footer:before {
+    clear: both;
+    content: "";
 }
 
 
