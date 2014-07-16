@@ -26,7 +26,7 @@
     height: 300px; /* again, for example purposes only */
 }
 
-
+/*The current clearfix is not clearing properly on Chrome*/
 .footer:before {
     clear: both;
     content: "";
