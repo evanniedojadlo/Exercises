@@ -26,10 +26,14 @@
     height: 300px; /* again, for example purposes only */
 }
 
+.footer {clear: both;}
+.item {border: 1px solid red; padding: 20px; width: 100px; float: left;}
 /*The current clearfix is not clearing properly on Chrome*/
-.footer:before {
+.footer:after {
     clear: both;
     content: "";
+    border: 1px solid black;
+    display: block;
 }
 
 

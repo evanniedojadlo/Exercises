@@ -110,3 +110,11 @@ div {
 	font-size: 36px;
 	text-align: center;
 }
+
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	border: 1px solid black;
+}
